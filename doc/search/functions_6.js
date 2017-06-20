@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7elista',['~Lista',['../classedb1_1_1Lista.html#ab87784bbc568a1fa1fb9c99d20a8ca35',1,'edb1::Lista']]]
+  ['remover',['Remover',['../classedb1_1_1Lista.html#a0322a9064d2431216d886344cb97c9ce',1,'edb1::Lista']]]
 ];

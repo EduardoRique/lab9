@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Laboratorio 9: Código-Fonte de include/pilha.h</title>
+<title>Laboratorio 9: Código-Fonte de include/fila.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,12 +86,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">pilha.h</div>  </div>
+<div class="title">fila.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="pilha_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PILHA_H</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PILHA_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef FILA_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FILA_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
@@ -102,48 +102,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>edb1 {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classedb1_1_1Pilha.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classedb1_1_1Pilha.html">Pilha</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classedb1_1_1Fila.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classedb1_1_1Fila.html">Fila</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">int</span> tamanhomax; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">int</span> tamanho; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        T *<a class="code" href="classpilha.html">pilha</a>; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        T *fila; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classedb1_1_1Pilha.html#a42d127d97db6f2712286f93c52040560">Pilha</a>(<span class="keywordtype">int</span> tamanho); </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classedb1_1_1Pilha.html#a134af53d5fcd1e526bca4e805b3da723">push</a>(T el); </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        T <a class="code" href="classedb1_1_1Pilha.html#a62b9e1f82b51f7dab653e1632cd61819">pop</a>(); </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classedb1_1_1Fila.html#aeab1ecc403db4487f7f309458b216095">Fila</a>(<span class="keywordtype">int</span> tamanho); </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classedb1_1_1Fila.html#a56ebe670bad3fe1c40559cacfffea6ac">push</a>(T el); </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        T <a class="code" href="classedb1_1_1Fila.html#a76a63836b817c1129d0b8ef9bf51af62">pop</a>(); </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classedb1_1_1Pilha.html#a42d127d97db6f2712286f93c52040560">   44</a></span>&#160;    <a class="code" href="classedb1_1_1Pilha.html#a42d127d97db6f2712286f93c52040560">Pilha&lt;T&gt;::Pilha</a>(<span class="keywordtype">int</span> n){</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classpilha.html">pilha</a> = <span class="keyword">new</span> T[n];</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classedb1_1_1Fila.html#aeab1ecc403db4487f7f309458b216095">   44</a></span>&#160;    <a class="code" href="classedb1_1_1Fila.html#aeab1ecc403db4487f7f309458b216095">Fila&lt;T&gt;::Fila</a>(<span class="keywordtype">int</span> n){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        fila = <span class="keyword">new</span> T[n];</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        tamanhomax = n;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        tamanho = 0;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classedb1_1_1Pilha.html#a134af53d5fcd1e526bca4e805b3da723">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classedb1_1_1Pilha.html#a134af53d5fcd1e526bca4e805b3da723">Pilha&lt;T&gt;::push</a>(T el){</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classedb1_1_1Fila.html#a56ebe670bad3fe1c40559cacfffea6ac">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classedb1_1_1Fila.html#a56ebe670bad3fe1c40559cacfffea6ac">Fila&lt;T&gt;::push</a>(T el){</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span>(tamanho == tamanhomax){</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> tamanho;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classpilha.html">pilha</a>[tamanho] = el;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        fila[tamanho] = el;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> tamanho++;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classedb1_1_1Pilha.html#a62b9e1f82b51f7dab653e1632cd61819">   69</a></span>&#160;    T <a class="code" href="classedb1_1_1Pilha.html#a62b9e1f82b51f7dab653e1632cd61819">Pilha&lt;T&gt;::pop</a>(){</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classedb1_1_1Fila.html#a76a63836b817c1129d0b8ef9bf51af62">   69</a></span>&#160;    T <a class="code" href="classedb1_1_1Fila.html#a76a63836b817c1129d0b8ef9bf51af62">Fila&lt;T&gt;::pop</a>(){</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span>(tamanho == 0){</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> tamanho;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classpilha.html">pilha</a>[--tamanho];</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classedb1_1_1Pilha_html_a42d127d97db6f2712286f93c52040560"><div class="ttname"><a href="classedb1_1_1Pilha.html#a42d127d97db6f2712286f93c52040560">edb1::Pilha::Pilha</a></div><div class="ttdeci">Pilha(int tamanho)</div><div class="ttdef"><b>Definition:</b> pilha.h:44</div></div>
-<div class="ttc" id="classpilha_html"><div class="ttname"><a href="classpilha.html">pilha</a></div><div class="ttdoc">Classe que representa uma pilha. </div></div>
-<div class="ttc" id="classedb1_1_1Pilha_html"><div class="ttname"><a href="classedb1_1_1Pilha.html">edb1::Pilha</a></div><div class="ttdef"><b>Definition:</b> pilha.h:26</div></div>
-<div class="ttc" id="classedb1_1_1Pilha_html_a62b9e1f82b51f7dab653e1632cd61819"><div class="ttname"><a href="classedb1_1_1Pilha.html#a62b9e1f82b51f7dab653e1632cd61819">edb1::Pilha::pop</a></div><div class="ttdeci">T pop()</div><div class="ttdef"><b>Definition:</b> pilha.h:69</div></div>
-<div class="ttc" id="classedb1_1_1Pilha_html_a134af53d5fcd1e526bca4e805b3da723"><div class="ttname"><a href="classedb1_1_1Pilha.html#a134af53d5fcd1e526bca4e805b3da723">edb1::Pilha::push</a></div><div class="ttdeci">int push(T el)</div><div class="ttdef"><b>Definition:</b> pilha.h:56</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        tamanho--;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        T el = fila[0];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; tamanho; i++){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            fila[i] = fila[i + 1];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> el;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classedb1_1_1Fila_html_a76a63836b817c1129d0b8ef9bf51af62"><div class="ttname"><a href="classedb1_1_1Fila.html#a76a63836b817c1129d0b8ef9bf51af62">edb1::Fila::pop</a></div><div class="ttdeci">T pop()</div><div class="ttdef"><b>Definition:</b> fila.h:69</div></div>
+<div class="ttc" id="classedb1_1_1Fila_html"><div class="ttname"><a href="classedb1_1_1Fila.html">edb1::Fila</a></div><div class="ttdoc">Classe que representa uma Fila. </div><div class="ttdef"><b>Definition:</b> fila.h:26</div></div>
+<div class="ttc" id="classedb1_1_1Fila_html_a56ebe670bad3fe1c40559cacfffea6ac"><div class="ttname"><a href="classedb1_1_1Fila.html#a56ebe670bad3fe1c40559cacfffea6ac">edb1::Fila::push</a></div><div class="ttdeci">int push(T el)</div><div class="ttdef"><b>Definition:</b> fila.h:56</div></div>
+<div class="ttc" id="classedb1_1_1Fila_html_aeab1ecc403db4487f7f309458b216095"><div class="ttname"><a href="classedb1_1_1Fila.html#aeab1ecc403db4487f7f309458b216095">edb1::Fila::Fila</a></div><div class="ttdeci">Fila(int tamanho)</div><div class="ttdef"><b>Definition:</b> fila.h:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

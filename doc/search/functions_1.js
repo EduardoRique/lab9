@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lista',['Lista',['../classedb1_1_1Lista.html#af6a6a8c28504bb544353bbe998188262',1,'edb1::Lista']]]
+  ['inserir',['Inserir',['../classedb1_1_1Lista.html#a591898d901ce8387227924078be791c8',1,'edb1::Lista']]]
 ];

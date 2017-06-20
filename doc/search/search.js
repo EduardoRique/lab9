@@ -7,10 +7,10 @@
 
 var indexSectionsWithContent =
 {
-  0: "abdilmnpr~",
-  1: "lnp",
+  0: "abdfilmnpr~",
+  1: "flnp",
   2: "blmp",
-  3: "ilmnpr~",
+  3: "filmnpr~",
   4: "adp",
   5: "l"
 };

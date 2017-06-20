@@ -1,0 +1,9 @@
+Os testes das TAD's foram colocados apenas um elemento, apresentado na tela 
+e removido, um possível erro pode ser o estouro da pilha, quando se abre 
+com um tamanho esperado e coloca mais elementos do que suporta.
+
+As ordenações não foram implementadas.
+
+Para as buscas, foi criado um vetor ordenado de tamanho 100, onde cada elemento 
+representava sua posição, um erro poderia ocorrer ao passar um elemento de outro 
+tipo, ou na falta de especialições como a comparação deficiente para strings.
