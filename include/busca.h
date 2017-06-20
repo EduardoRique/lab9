@@ -86,6 +86,60 @@ namespace edb1 {
             return busca_bin_r(Vetor, ini, (mid - 1), el);
         return -1;
     }
+
+    /**
+    * @details Função de busca ternaria iterativa
+    * @param Vetor Vetor com os dados
+    * @param ini Posicao mais à esquerda no vetor para a busca
+    * @param fim Posicao mais à direita para busca
+    * @param el Elemento a ser buscado
+    */
+    extern "C++" template<typename T>
+    int busca_ter_i(T Vetor[], int ini, int fim, T el) {
+        int mid1, mid2;
+        while(ini <= fim){
+
+            mid1 = ((fim - ini) / 3) + ini;
+            mid2 = (((fim - ini) / 3) * 2) + ini;
+
+            if(el == Vetor[mid1])	return mid1;
+                
+            if(el == Vetor[mid2]) return mid2;
+                
+            if(el < Vetor[mid1]) fim = mid1 - 1;
+                
+            if(el > Vetor[mid1] && el < Vetor[mid2]){
+                ini = mid1 + 1;
+                fim = mid2 - 1;
+            } 
+            else if(el > Vetor[mid2]) ini = mid2 + 1;
+        }
+        return -1;
+    }
+
+    /**
+    * @details      Função de busca ternaria recursiva
+    * @param Vetor Vetor com os dados
+    * @param ini Posicao mais à esquerda no vetor para a busca
+    * @param fim Posicao mais à direita para busca
+    * @param el Elemento a ser buscado
+    */
+    extern "C++" template<typename T>
+    int busca_ter_r(T Vetor[], int ini, int fim, T el) {
+        if((ini < 0) || (fim < (fim-ini)-1) || (ini > fim)) return -1;
+            
+        if(el == Vetor[ini]) return ini;
+            
+        if(el == Vetor[fim]) return fim;
+            
+        if(el < Vetor[ini]) return busca_ter_r(Vetor, (ini - 1), fim, el);
+            
+        if ((el > Vetor[ini]) && (el < Vetor[fim])) return busca_ter_r(Vetor, (ini + 1), (fim - 1), el);
+            
+        if(el > Vetor[fim]) return busca_ter_r(Vetor, ini, (fim + 1), el);
+            
+        return -1;
+    }
 }
 
 #endif

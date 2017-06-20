@@ -22,16 +22,17 @@ namespace edb1 {
     * @brief   Classe que representa uma pilha
     * @details Os atributos da pilha são: tamanhomax, tamanho e pilha
 	*/ 
+    template<typename T>
     class Pilha {
         private:
         int tamanhomax; /**< Tamanho maximo da pilha */
         int tamanho; /**< Tamanho */
-        char *pilha; /**< elementos */
+        T *pilha; /**< elementos */
         
         public:
         Pilha(int tamanho); /**< Construtor padrao */
-        int push(char el); /**< Insere no topo */
-        char pop(); /**< Remove do topo */
+        int push(T el); /**< Insere no topo */
+        T pop(); /**< Remove do topo */
     };
 
     /**
@@ -39,8 +40,9 @@ namespace edb1 {
     *			recebe esse tamanho e o tamanho inicializa com 0
     *@param     n tamanho
     */
-    Pilha::Pilha(int n){
-        pilha = new char[n];
+    template<typename T>
+    Pilha<T>::Pilha(int n){
+        pilha = new T[n];
         tamanhomax = n;
         tamanho = 0;
     }
@@ -50,7 +52,8 @@ namespace edb1 {
     *@param     el elemento
     *@return    tamanho atual
     */
-    int Pilha::push(char el){
+    template<typename T>
+    int Pilha<T>::push(T el){
         if(tamanho == tamanhomax){
             return tamanho;
         }
@@ -62,7 +65,8 @@ namespace edb1 {
     *@details   O elemento do topo é removido da pilha
     *@return    ultimo elemento
     */
-    char Pilha::pop(){
+    template<typename T>
+    T Pilha<T>::pop(){
         if(tamanho == 0){
             return tamanho;
         }

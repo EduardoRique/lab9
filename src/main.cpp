@@ -28,9 +28,8 @@ int main(){
 
     //Testa a classe pilha
     cout << "Teste de pilha" << endl;
-    Pilha pilha(1);
-    char o = 'o';
-    pilha.push(o);
+    Pilha<int> pilha(1);
+    pilha.push(10);
     cout << pilha.pop() << endl;
 
     //Testa as buscas
@@ -42,6 +41,8 @@ int main(){
     cout <<  busca_seq_r(V, 0, 100, 87) << endl;
     cout <<  busca_bin_i(V, 0, 100, 12) << endl;
     cout <<  busca_bin_r(V, 0, 100, 65) << endl;
+    cout <<  busca_ter_i(V, 0, 100, 85) << endl;
+    cout <<  busca_ter_r(V, 0, 100, 10) << endl;
 
     return 0;
 }
